@@ -35,7 +35,7 @@ module.exports = {
 				query: Object.assign({presets: ['es2015']}, !isHmr() ? {} : {})
 			}, {
 				test: /\.css$/,
-				loader: 'style!css'
+				loader: 'style!css?modules&localIdentName=[name]__[local]___[hash:base64:5]'
 			});
 
 			return loaders;

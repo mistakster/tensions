@@ -26,6 +26,7 @@
     "d3": "^3.5.16",
     "express": "^4.13.4",
     "serve-static": "^1.10.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
