@@ -73,14 +73,14 @@ import generateWall from './lib/wall-data/index.js';
 
 	var force = d3.layout.force()
 		.nodes(data)
-		.links(links)
-		.linkDistance(250)
-		.linkStrength(0.8)
+		//.links(links)
+		//.linkDistance(250)
+		//.linkStrength(0.8)
 		.size([500, 500])
 		.friction(0.9)
-		.charge(d => d.attractor ? 100 : (d.fixed ? -10 : -4 * d.r))
+		.charge(d => d.attractor ? 100 : (d.fixed ? -4 : -4 * d.r))
 		.gravity(0.05)
-		.theta(100)
+		.theta(1000)
 		.alpha(0.1)
 		.start();
 
